@@ -1,0 +1,860 @@
+[ng-cloak] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #170e24;
+  overflow-x: hidden;
+}
+
+.md-navbar {
+  position: absolute;
+  z-index: 5555;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: #221435;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.mb-title-box {
+  position: relative;
+  z-index: 6666;
+  top: 0;
+  width: 200px;
+  height: 80px;
+  margin-left: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #170e24;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.mb-title {
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.md-info {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.md-info-2 {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.md-info-text {
+  position: relative;
+  width: 100%;
+  top: 12px;
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+  color: #303030;
+}
+
+.md-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #deddd8;
+}
+
+.md-calendar-box {
+  position: relative;
+  z-index: 3333;
+  padding: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.md-calendar-date,
+.md-calendar-year-1,
+.md-calendar-year-2 {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  margin: 40px 10px;
+  padding: 10px;
+  box-shadow: 0px -40px 5px 0px #deddd8, 0px 10px 40px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.md-calendar-date {
+  background-color: #a72432;
+}
+
+.md-calendar-year-1 {
+  background-color: #7a275e;
+}
+
+.md-calendar-year-2 {
+  background-color: #fc5a95;
+}
+
+.md-calendar-year {
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 170px;
+  color: #fff;
+}
+
+.md-calendar-date-month {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  color: #fff;
+}
+
+.md-calendar-day {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-size: 130px;
+  color: #fff;
+}
+
+.md-calendar-date-day {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  background-color: #364150;
+}
+
+.md-fig-calendar {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.md-fig-calendar-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.md-fig-circ {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #deddd8;
+  border-radius: 50%;
+}
+
+.md-fig-rect {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.md-fig-rect-item {
+  position: relative;
+  top: 5px;
+  width: 4px;
+  height: 20px;
+  background-color: #424242;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.md-fig-rect-item-2 {
+  position: relative;
+  top: 5px;
+  left: -3px;
+  width: 4px;
+  height: 10px;
+  background-color: #303030;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.md-calendar-month {
+  position: relative;
+  z-index: 2222;
+  cursor: pointer;
+}
+
+.md-calendar-month-opt-box,
+.md-calendar-day-opt-box,
+.md-calendar-year1-opt-box,
+.md-calendar-year2-opt-box {
+  position: relative;
+  z-index: 3333;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-container,
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.md-bot-box {
+  position: absolute;
+  z-index: 3333;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.md-bot {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #009688;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.md-bot-icon {
+  position: relative;
+  top: 2px;
+  color: #fff;
+  font-size: 50px;
+}
+
+/*HOVER*/
+/*hvr-md-grow-bot*/
+.hvr-md-grow-bot {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.hvr-md-grow-bot:hover,
+.hvr-md-grow-bot:focus,
+.hvr-md-grow-bot:active {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*------------------------------------ ************ MEDIA QUERIES ************* -------------------------------------------*/
+/* ------------- ******************* ---------------- **** XS-1 **** ---------------------- ******************** --------- */
+/* ----------------------------------- ***************** 310 - 479 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 310px) and (max-width: 479px) {
+  .mb-title-box {
+    position: relative;
+    z-index: 6666;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    background-color: #170e24;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+  }
+
+  .mb-title {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .md-info-text {
+    position: relative;
+    width: 100%;
+    top: 10px;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    color: #303030;
+  }
+
+  .md-calendar-date,
+  .md-calendar-year-1,
+  .md-calendar-year-2 {
+    position: relative;
+    width: 80px;
+    height: 120px;
+    margin: 20px 5px;
+    padding: 10px;
+    box-shadow: 0px -15px 5px 0px #deddd8, 0px 10px 30px rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+
+  .md-calendar-year {
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 70px;
+    color: #fff;
+  }
+
+  .md-calendar-date-month {
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .md-calendar-day {
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 55px;
+    color: #fff;
+  }
+
+  .md-calendar-date-day {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: #364150;
+  }
+
+  .md-fig-circ {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-color: #deddd8;
+    border-radius: 50%;
+  }
+
+  .md-fig-rect {
+    position: relative;
+    width: 25px;
+    height: 18px;
+    padding: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .md-fig-rect-item {
+    position: relative;
+    top: 10px;
+    width: 2px;
+    height: 8px;
+    margin: 1px;
+    background-color: #424242;
+  }
+  .md-fig-rect-item-2 {
+    position: relative;
+    top: 10px;
+    left: -2px;
+    width: 2px;
+    height: 4px;
+    margin: 1px;
+    background-color: #303030;
+  }
+
+  .md-bot-box {
+    position: absolute;
+    z-index: 3333;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .md-bot {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .md-bot-icon {
+    position: relative;
+    top: 1px;
+    color: #fff;
+    font-size: 27px;
+  }
+}
+@media (min-width: 310px) and (max-width: 319px) {
+  .md-calendar-date {
+    margin-left: 60px;
+  }
+  .md-calendar-year-1 {
+    margin-left: 55px;
+  }
+  .md-bot {
+    position: relative;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .md-info-fig-2 {
+    opacity: 1;
+    position: absolute;
+    z-index: 4444;
+    top: -350px;
+    left: -400px;
+    width: 500px;
+    height: 500px;
+    background: #141c33;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@media (min-width: 320px) and (max-width: 324px) {
+  .md-calendar-date {
+    margin-left: 60px;
+  }
+  .md-calendar-year-1 {
+    margin-left: 55px;
+  }
+  .md-bot {
+    position: relative;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .md-info-fig-2 {
+    opacity: 1;
+    position: absolute;
+    z-index: 4444;
+    top: -350px;
+    left: -400px;
+    width: 500px;
+    height: 500px;
+    background: #141c33;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+@media (min-width: 325px) and (max-width: 329px) {
+  .md-calendar-date {
+    margin-left: 65px;
+  }
+  .md-calendar-year-1 {
+    margin-left: 60px;
+  }
+  .md-bot {
+    position: relative;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #009688;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .md-info-fig-2 {
+    opacity: 1;
+    position: absolute;
+    z-index: 4444;
+    top: -350px;
+    left: -400px;
+    width: 500px;
+    height: 500px;
+    background: #141c33;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+/* ----------------------------------- ***************** 310 - 479 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/
+/* ------------- ******************* ----------------- **** XS-2 **** ---------------------- ******************** --------- */
+/* ----------------------------------- ***************** 480 - 767 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .mb-title-box {
+    position: relative;
+    z-index: 6666;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    background-color: #170e24;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+  }
+
+  .mb-title {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .md-info-text {
+    position: relative;
+    width: 100%;
+    top: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 25px;
+    color: #303030;
+  }
+
+  .md-calendar-date,
+  .md-calendar-year-1,
+  .md-calendar-year-2 {
+    position: relative;
+    width: 120px;
+    height: 160px;
+    margin: 40px 5px;
+    padding: 10px;
+    box-shadow: 0px -40px 5px 0px #deddd8, 0px 10px 40px rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+
+  .md-calendar-year {
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 90px;
+    color: #fff;
+  }
+
+  .md-calendar-date-month {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .md-calendar-day {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 70px;
+    color: #fff;
+  }
+
+  .md-calendar-date-day {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    color: #fff;
+    background-color: #364150;
+  }
+
+  .md-fig-circ {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #deddd8;
+    border-radius: 50%;
+  }
+
+  .md-fig-rect {
+    position: relative;
+    width: 35px;
+    height: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .md-fig-rect-item {
+    position: relative;
+    top: 10px;
+    width: 3px;
+    height: 10px;
+    background-color: #424242;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+  }
+  .md-fig-rect-item-2 {
+    position: relative;
+    top: 10px;
+    left: -3px;
+    width: 3px;
+    height: 5px;
+    background-color: #303030;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+  }
+
+  .md-bot-box {
+    position: absolute;
+    z-index: 3333;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .md-bot {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #009688;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .md-bot-icon {
+    position: relative;
+    top: 5px;
+    color: #fff;
+    font-size: 35px;
+  }
+}
+/* ----------------------------------- ***************** 480 - 767 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/
+/* ------------- ******************* ------------------ **** SM **** ---------------------- ******************** --------- */
+/* ----------------------------------- ***************** 768 - 991 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .mb-title-box {
+    position: relative;
+    z-index: 6666;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    margin-left: 40px;
+    background-color: #170e24;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+  }
+
+  .mb-title {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .md-info-text {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    font-family: "Dosis", sans-serif;
+    font-size: 35px;
+    color: #303030;
+  }
+
+  .md-calendar-date,
+  .md-calendar-year-1,
+  .md-calendar-year-2 {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    margin: 40px 10px;
+    padding: 10px;
+    box-shadow: 0px -40px 5px 0px #deddd8, 0px 10px 40px rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+
+  .md-calendar-year {
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 140px;
+    color: #fff;
+  }
+
+  .md-calendar-date-month {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .md-calendar-day {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 100px;
+    color: #fff;
+  }
+
+  .md-calendar-date-day {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    background-color: #364150;
+  }
+}
+/* ------------- ******************* ------------------ **** SM **** ---------------------- ******************** --------- */
+/* ----------------------------------- ***************** 768 - 991 ************* -------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------*/

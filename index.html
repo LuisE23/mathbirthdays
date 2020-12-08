@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mathbirthdays</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/2.1.1/angular-toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.1/hint.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div ng-app="mathbirthdays.module" ng-cloak>
+      <div ng-controller="mathBirthdaysCtrl as vm">
+        <div class="mb-title-box animated bounceIn">
+          <span class="mb-title">Mathbirthdays</span>
+        </div>
+        <div class="md-navbar"></div>
+        <div class="md-info">
+          <div class="md-info-text animated bounceInLeft">
+            <span>{{'Select your date of birth'}}</span>
+          </div>
+        </div>
+        <div class="md-box">
+          <div class="md-calendar-box">
+            <div class="md-calendar-date animated bounceInLeft">
+              <div ng-include="'figuresCalendar.tpl.html'"></div>
+              <div class="md-calendar-date-month">
+                <span
+                  class="md-calendar-month"
+                  ng-if="!vm.optionMonth"
+                  ng-mouseenter="vm.activeOptionMonth()"
+                  >{{vm.month}}</span
+                >
+                <div
+                  class="md-calendar-month-opt-box"
+                  ng-if="vm.optionMonth"
+                  ng-mouseleave="vm.desactiveOptionMonth()"
+                >
+                  <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                      <div
+                        class="swiper-slide"
+                        ng-repeat="opt in vm.nameMonth track by $index"
+                      >
+                        <div>
+                          <span class="md-calendar-month">{{opt}}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="md-calendar-date-day">
+                <span
+                  class="md-calendar-day"
+                  ng-if="!vm.optionDays"
+                  ng-mouseenter="vm.activeOptionDays()"
+                  >{{vm.day}}</span
+                >
+                <div
+                  class="md-calendar-day-opt-box"
+                  ng-if="vm.optionDays"
+                  ng-mouseleave="vm.desactiveOptionDays()"
+                >
+                  <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                      <div
+                        class="swiper-slide"
+                        ng-repeat="opt in vm.days track by $index"
+                      >
+                        <div>
+                          <span class="md-calendar-day">{{opt}}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md-calendar-year-1 animated bounceInDown">
+              <div ng-include="'figuresCalendar.tpl.html'"></div>
+              <span
+                class="md-calendar-year"
+                ng-if="!vm.optionYear1"
+                ng-mouseenter="vm.activeOptionYear1()"
+                >{{vm.year1}}</span
+              >
+              <div
+                class="md-calendar-year1-opt-box"
+                ng-if="vm.optionYear1"
+                ng-mouseleave="vm.desactiveOptionYear1()"
+              >
+                <div class="swiper-container swiper3">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide"
+                      ng-repeat="opt in vm.years1 track by $index"
+                    >
+                      <div>
+                        <span class="md-calendar-year">{{opt}}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-white"></div>
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+              </div>
+            </div>
+            <div class="md-calendar-year-2 animated bounceInRight">
+              <div ng-include="'figuresCalendar.tpl.html'"></div>
+              <span
+                class="md-calendar-year"
+                ng-if="!vm.optionYear2"
+                ng-mouseenter="vm.activeOptionYear2()"
+                >{{vm.year2}}</span
+              >
+              <div
+                class="md-calendar-year2-opt-box"
+                ng-if="vm.optionYear2"
+                ng-mouseleave="vm.desactiveOptionYear2()"
+              >
+                <div class="swiper-container swiper4">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide"
+                      ng-repeat="opt in vm.years2 track by $index"
+                    >
+                      <div>
+                        <span class="md-calendar-year">{{opt}}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next swiper-button-white"></div>
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md-bot-box animated bounceInUp">
+            <div
+              class="md-bot hvr-md-grow-bot hint--top hint--rounded hint--bounce"
+              data-hint="{{'Calculate'}}"
+              ng-click="vm.calcMathBirthday()"
+            >
+              <span class="md-bot-icon"><i class="fa fa-check"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="md-info-2"></div>
+      </div>
+
+      <script type="text/ng-template" id="figuresCalendar.tpl.html">
+        <div class="md-fig-calendar">
+            <div class="md-fig-calendar-box">
+                <div class="md-fig-rect">
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                </div>
+                <div class="md-fig-circ"></div>
+                <div class="md-fig-rect">
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                    <div class="md-fig-rect-item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="md-fig-calendar">
+            <div class="md-fig-calendar-box">
+                <div class="md-fig-rect">
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                </div>
+                <div class="md-fig-circ"></div>
+                <div class="md-fig-rect">
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                    <div class="md-fig-rect-item-2"></div>
+                </div>
+            </div>
+        </div>
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/2.1.1/angular-toastr.tpls.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+      <script src="https://use.fontawesome.com/d39d0e6413.js"></script>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
